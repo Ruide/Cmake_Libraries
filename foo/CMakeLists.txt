@@ -27,7 +27,7 @@ target_include_directories("${PROJECT_NAME}" PUBLIC # PROJECT_NAME variable to s
 if(NOT BUILD_SHARED_LIBS)
 	set(STATIC_POSTFIX "-s")
 	set_target_properties("${PROJECT_NAME}" PROPERTIES
-	COMPILE_FLAGS _DFOO_STATIC_DEFINE)
+	COMPILE_FLAGS -DFOO_STATIC_DEFINE)
 endif()
 
 set_target_properties("${PROJECT_NAME}" PROPERTIES
